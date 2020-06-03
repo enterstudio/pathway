@@ -62,7 +62,7 @@ group :development, :test do
 
   gem 'rspec-rails', '~> 3.1'
   gem 'cucumber-rails', require: false
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.6.0'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'simplecov', :group => :test
