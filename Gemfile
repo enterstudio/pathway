@@ -61,7 +61,7 @@ group :development, :test do
   #gem 'spring'
 
   gem 'rspec-rails', '~> 3.1'
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', '>= 2.1.0', require: false
   gem 'poltergeist'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
