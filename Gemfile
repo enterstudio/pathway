@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.2.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '6.0.3.5'
 
 # Bootstrap!
 gem 'bootstrap-sass', '~> 3.3.3'
@@ -61,7 +61,7 @@ group :development, :test do
   #gem 'spring'
 
   gem 'rspec-rails', '~> 3.1'
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', '>= 1.4.3', require: false
   gem 'poltergeist'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
