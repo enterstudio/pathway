@@ -6,7 +6,7 @@ gem 'rails', '4.2.0'
 
 # Bootstrap!
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.1'
 gem "font-awesome-rails"
 
 # Use Uglifier as compressor for JavaScript assets
@@ -24,7 +24,7 @@ gem 'jquery-form-validator-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.2', '>= 2.2.11'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -55,12 +55,12 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.1', '>= 2.1.2'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #gem 'spring'
 
-  gem 'rspec-rails', '~> 3.1'
+  gem 'rspec-rails', '~> 3.2', '>= 3.2.1'
   gem 'cucumber-rails', require: false
   gem 'poltergeist'
   gem 'factory_girl_rails'
