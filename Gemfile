@@ -6,7 +6,7 @@ gem 'rails', '4.2.0'
 
 # Bootstrap!
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem "font-awesome-rails"
 
 # Use Uglifier as compressor for JavaScript assets
@@ -55,7 +55,7 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.1', '>= 2.1.2'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #gem 'spring'
