@@ -2,31 +2,31 @@ source 'https://rubygems.org'
 ruby "2.2.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '7.1.0'
 
 # Bootstrap!
-gem 'bootstrap-sass', '~> 3.3.3'
-gem 'sass-rails', '~> 5.0'
-gem "font-awesome-rails"
+gem 'bootstrap-sass', '~> 3.3.4', '>= 3.3.4.1'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
+gem "font-awesome-rails", ">= 4.7.0.8"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.1.1'
 # Add form validator plugin
 gem 'jquery-form-validator-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'devise', '~> 3.5.10'
+gem 'devise', '~> 4.7.0'
 gem 'bcrypt', '~> 3.1.11'
 gem 'cancancan', '~> 1.10'
 gem 'spreadsheet'
@@ -55,20 +55,20 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 3.0', '>= 3.0.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #gem 'spring'
 
-  gem 'rspec-rails', '~> 3.1'
-  gem 'cucumber-rails', require: false
-  gem 'poltergeist'
-  gem 'factory_girl_rails'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.0'
+  gem 'cucumber-rails', '>= 3.0.0', require: false
+  gem 'poltergeist', '>= 1.7.0'
+  gem 'factory_girl_rails', '>= 4.6.0'
   gem 'database_cleaner'
   gem 'simplecov', :group => :test
 
   gem 'travisify', github: 'theodi/travisify'
-  gem 'badgerbadgerbadger'
+  gem 'badgerbadgerbadger', '>= 0.13.0'
   gem 'dotenv-rails'
 end
 
@@ -78,4 +78,4 @@ group :production do
   gem 'rails_12factor' # For heroku
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'tzinfo-data', '>= 1.2015.2', platforms: [:mingw, :mswin, :x64_mingw]
